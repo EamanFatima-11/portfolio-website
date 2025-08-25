@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eaman Fatima | Frontend Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Eaman Fatima - Frontend Developer skilled in JavaScript, React, and Tailwind CSS. Explore projects, skills, and contact details.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--CDN (Content Delivery Network) version of Tailwind CSS
+It loads Tailwind CSS directly from the internet into your project.
+This way, you don’t need to install Tailwind locally or set up a build process.
+After including this line, you can immediately use Tailwind classes like bg-gray-800, text-purple-400, flex, grid, etc.-->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #e2e8f0;
+      scroll-behavior: smooth;
+    }
+
+    /* Animated gradient background */
+    .bg-animated {
+      background: linear-gradient(-45deg, #0f172a, #1e1b4b, #4c1d95, #0f172a);
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Glass card */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: 0.3s ease;
+    }
+    .glass-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+    }
+
+  
+  </style>
+</head>
+<body class="bg-animated">
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 bg-black/50 backdrop-blur-md shadow-md z-50">
+    <nav class="flex justify-between items-center px-6 py-4">
+      <h1 class="text-purple-400 text-xl font-bold">Eaman Fatima</h1>
+      <ul class="flex space-x-6 text-gray-300">
+        <li><a href="#about" class="hover:text-purple-400 transition">About</a></li>
+        <li><a href="#skills" class="hover:text-purple-400 transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-purple-400 transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-purple-400 transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+    <h1 class="text-5xl md:text-7xl font-extrabold text-purple-400 drop-shadow-lg">Hi, I'm Eaman Fatima</h1>
+    <p class="mt-4 text-2xl text-gray-300 ">Frontend Developer | JavaScript Lover</p>
+    <div class="mt-6 flex space-x-4">
+      <a href="#projects" class="border border-purple-500 px-5 py-2 rounded-lg hover:bg-purple-700 text-white transition">View Projects</a>
+      <a href="#contact" class="border border-purple-500 px-5 py-2 rounded-lg hover:bg-purple-700 text-white transition">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 text-center max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-purple-400">🙋 About Me</h2>
+    <p class="text-gray-300 text-lg leading-relaxed">
+      Hi! I'm <span class="text-purple-300 font-semibold">Eaman Fatima</span>, a passionate 
+      <span class="text-purple-400">Frontend Developer</span> who loves turning 
+      designs into interactive, user-friendly web experiences. 
+      I enjoy working with <span class="text-purple-300">JavaScript, React, and Tailwind CSS</span>, 
+      and I’m always eager to learn new technologies and improve my craft.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 text-center">
+    <h2 class="text-3xl font-bold mb-12 text-purple-400">🚀 Skills</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 px-6 max-w-6xl mx-auto">
+      <div class="glass-card p-6 rounded-xl">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-12 h-12 mx-auto mb-3">
+        <p>HTML</p>
+      </div>
+      <div class="glass-card p-6 rounded-xl">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-12 h-12 mx-auto mb-3">
+        <p>CSS</p>
+      </div>
+      <div class="glass-card p-6 rounded-xl">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12 mx-auto mb-3">
+        <p>JavaScript</p>
+      </div>
+      <div class="glass-card p-6 rounded-xl">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-12 h-12 mx-auto mb-3">
+        <p>React</p>
+      </div>
+      <div class="glass-card p-6 rounded-xl">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="w-12 h-12 mx-auto mb-3">
+        <p>Tailwind</p>
+      </div>
+      <div class="glass-card p-6 rounded-xl">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-12 h-12 mx-auto mb-3">
+        <p>GitHub</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 text-purple-400">💻 Projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Weather App -->
+      <div class="glass-card p-6 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-3 text-purple-300">🌦️ Weather App</h3>
+        <p class="text-gray-300 mb-3">Check live weather using OpenWeather API.</p>
+        <div class="flex space-x-4">
+          <a href="https://weather-app-by-eaman.netlify.app/"  target="_blank"class="text-purple-400 hover:underline">🔗 Live Demo</a>
+          <a href="https://github.com/EamanFatima-11/Weather-App/tree/main"  target="_blank"class="text-purple-400 hover:underline">📂 Code</a>
+        </div>
+      </div>
+
+      <!-- Todo List -->
+      <div class="glass-card p-6 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-3 text-purple-300">🛒 Mini E-Commerce</h3>
+        <p class="text-gray-300 mb-3">Simple cart system with product filters.</p>
+         <div class="flex space-x-4">
+          <a href="https://mini-ecommerce-site-by-eaman.netlify.app/" target="_blank" class="text-purple-400 hover:underline">🔗 Live Demo</a>
+          <a href="https://github.com/EamanFatima-11/Mini-Ecommerce-platform" target="_blank" class="text-purple-400 hover:underline">📂 Code</a>
+        </div>
+        
+      </div>
+
+      <!-- Mini E-Commerce -->
+      <div class="glass-card p-6 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-3 text-purple-300">✅ Todo List</h3>
+        <p class="text-gray-300 mb-3">Organize tasks with a clean UI & local storage.</p>
+       <div class="flex space-x-4">
+          <a href="https://to-do-list-by-eaman.netlify.app/"  target="_blank" class="text-purple-400 hover:underline">🔗 Live Demo</a>
+          <a href="https://github.com/EamanFatima-11/To-Do-list/tree/main"  target="_blank" class="text-purple-400 hover:underline">📂 Code</a>
+        </div>
+      </div>
+
+      <!-- Memory Game -->
+      <div class="glass-card p-6 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-3 text-purple-300">🎮 Memory Game</h3>
+        <p class="text-gray-300 mb-3">Flip cards game made with JavaScript.</p>
+        <div class="flex space-x-4">
+          <a href="https://memory-game-by-eaman.netlify.app/" target="_blank" class="text-purple-400 hover:underline">🔗 Live Demo</a>
+          <a href="https://github.com/EamanFatima-11/Memory-Game" target="_blank" class="text-purple-400 hover:underline">📂 Code</a>
+        </div>
+      </div>
+
+      <!-- Blog Website -->
+      <div class="glass-card p-6 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-3 text-purple-300">📚 Blog Website</h3>
+        <p class="text-gray-300 mb-3">Responsive blog layout with clean design.</p>
+        <div class="flex space-x-4">
+          <a href="https://blog-layout-by-eaman.netlify.app/"target="_blank" class="text-purple-400 hover:underline">🔗 Live Demo</a>
+          <a href="https://github.com/EamanFatima-11/Blog-layout/tree/main" target="_blank" class="text-purple-400 hover:underline">📂 Code</a>
+        </div>
+      </div>
+
+      <!-- Portfolio Dashboard -->
+      <div class="glass-card p-6 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-3 text-purple-300">🎤 Speech-to-Text Converter</h3>
+        <p class="text-gray-300 mb-3"> convert speech into text using web speech API </p>
+        <div class="flex space-x-4">
+          <a href="https://speech-to-text-converter-by-eaman.netlify.app/" target="_blank" class="text-purple-400 hover:underline">🔗 Live Demo</a>
+          <a href="https://github.com/EamanFatima-11/Speech-to-text-converter/tree/main"  target="_blank" class="text-purple-400 hover:underline">📂 Code</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-purple-400">📬 Contact Me</h2>
+    <p class="text-gray-300">Let's build something amazing together!</p>
+    <div class="mt-4">
+     
+
+      <p>📧 Email:  <a href="mailto:eamanfatima112@gmail.com" class="text-purple-400 hover:underline">eamanfatima112@gmail.com</a></p>
+
+
+      <p>🐙 GitHub: <a href="https://github.com/EamanFatima-11" class="text-purple-400 hover:underline">github.com/EamanFatima-11</a></p>ortfolio.pdf" download class="text-purple-400 hover:underline">Click Here</a></p>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 text-sm bg-black/40 backdrop-blur-md">
+    © 2025 Eaman Fatima | Built with ❤️ and Tailwind CSS
+  </footer>
+</body>
+</html>
