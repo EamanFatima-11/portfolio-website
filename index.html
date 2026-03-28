@@ -1,205 +1,795 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eaman Fatima | Frontend Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Eaman Fatima - Frontend Developer skilled in JavaScript, React, and Tailwind CSS. Explore projects, skills, and contact details.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!--CDN (Content Delivery Network) version of Tailwind CSS
-It loads Tailwind CSS directly from the internet into your project.
-This way, you don’t need to install Tailwind locally or set up a build process.
-After including this line, you can immediately use Tailwind classes like bg-gray-800, text-purple-400, flex, grid, etc.-->
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      color: #e2e8f0;
-      scroll-behavior: smooth;
-    }
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eaman Fatima — Flutter App Designer & Frontend Web Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
 
-    /* Animated gradient background */
-    .bg-animated {
-      background: linear-gradient(-45deg, #0f172a, #1e1b4b, #4c1d95, #0f172a);
-      background-size: 400% 400%;
-      animation: gradientMove 12s ease infinite;
-    }
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+  <!-- ═══ CURSOR ═══ -->
+  <div class="cursor-dot"  id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-label" id="cursorLabel"></div>
 
-    /* Glass card */
-    .glass-card {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: 0.3s ease;
-    }
-    .glass-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
-    }
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="nav" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+  <span>EF<span class="gold-dot">.</span></span>
+</a>
+     
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"      class="nav-link active">Home</a></li>
+        <li><a href="#about"     class="nav-link">About</a></li>
+          <li><a href="#experience"     class="nav-link">Experience</a></li>
+        <li><a href="#skills"    class="nav-link">Skills</a></li>
+        <li><a href="#projects"  class="nav-link">Projects</a></li>
+        <li><a href="#contact"   class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://drive.google.com/file/d/15PraXYhT_v2s6doV5Lxv_-4-lbDDwCVm/view?usp=drive_link/" target="_blank"  class="btn-resume" id="resumeBtn">
+          <i class="fas fa-download"></i> Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home"      class="mobile-link">Home</a>
+      <a href="#about"     class="mobile-link">About</a>
+      <a href="#skills"    class="mobile-link">Skills</a>
+      <a href="#projects"  class="mobile-link">Projects</a>
+      <a href="#contact"   class="mobile-link">Contact</a>
+      <a href="https://drive.google.com/file/d/15PraXYhT_v2s6doV5Lxv_-4-lbDDwCVm/view?usp=drive_link/" target="_blank" class="mobile-link resume-mobile">Resume</a>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-title reveal delay-1">
+        Flutter App Designer<br/>
+        <em>&amp; Frontend Web</em><br/>
+        Developer
+      </h1>
+      <p class="hero-sub reveal delay-2">
+        Hi, I'm <strong>Eaman Fatima</strong> — a CS student at NFC Institute of Engineering &amp; Technology,
+        crafting beautiful mobile apps and web experiences with Flutter, Dart, HTML &amp; CSS.
+      </p>
+      <div class="hero-btns reveal delay-3">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact"  class="btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats reveal delay-4">
+        <div class="stat-item">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Flutter Apps</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Web Projects</span>
+       
+      </div>
+    </div>
+    </div>
+    <div class="hero-visual reveal delay-2">
+      <div class="phone-mockup">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="app-ui">
+            <div class="app-bar-ui">
+              <span>MediRadar</span>
+              <i class="fas fa-bell"></i>
+            </div>
+            <div class="app-card-ui c1">💊 Pharmacy Finder</div>
+            <div class="app-card-ui c2">📍 Near You</div>
+            <div class="app-card-ui c3">🔍 Medicine Search</div>
+            <div class="app-shimmer"></div>
+            <div class="app-shimmer short"></div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-badge fb1">Flutter 💙</div>
+      <div class="floating-badge fb2">Dart 🎯</div>
+      <div class="floating-badge fb3">UI/UX ✨</div>
+    </div>
+    <a href="#about" class="scroll-down">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </a>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <div class="about-grid">
+       <div class="about-avatar">
+ <img src="https://raw.githubusercontent.com/EamanFatima-11/portfolio/main/me.jpg"
+     alt="Eaman Fatima" class="avatar-photo" />
+  <div class="avatar-ring"></div>
+</div>
+          <div class="about-card">
+            <div class="about-info-row">
+              <span class="info-key">Name</span>
+              <span class="info-val">Eaman Fatima</span>
+            </div>
+            <div class="about-info-row">
+              <span class="info-key">Expertise</span>
+              <span class="info-val">Flutter &amp; Web Dev</span>
+            </div>
+            <div class="about-info-row">
+              <span class="info-key">Focus</span>
+              <span class="info-val">Mobile &amp; Frontend</span>
+            </div>
+            <div class="about-info-row">
+              <span class="info-key">Location</span>
+              <span class="info-val">Pakistan 🇵🇰</span>
+            </div>
+            <div class="about-info-row">
+              <span class="info-key">Status</span>
+              <span class="info-val status-open">● Open to Work</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal delay-1">
+          <h2 class="about-title">
+            Crafting digital experiences that <em>people love</em>
+          </h2>
+          <p class="about-text">
+            I'm a passionate Flutter App Designer and Frontend Web Developer.
+            I specialize in building beautiful, responsive mobile apps using Flutter &amp; Dart, and
+            crafting clean, modern web interfaces with HTML, CSS and JavaScript.
+          </p>
+          <p class="about-text">
+            I love turning creative ideas into polished digital products — whether it's a sleek
+            mobile app or a stunning web experience. Always exploring new technologies and
+            pushing the limits of what's possible with code.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Flutter Mobile Apps</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-code"></i>
+              <span>Frontend Web Dev</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-paint-brush"></i>
+              <span>UI / UX Design</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-rocket"></i>
+              <span>5+ Apps Shipped</span>
+            </div>
+          </div>
+          <div class="about-socials">
+            <a href="https://github.com/EamanFatima-11" target="_blank" class="social-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/eaman-fatima-51640434b/" target="_blank" class="social-btn">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:eamanfatima112@gmail.com" class="social-btn">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- ═══ EXPERIENCE ═══ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label reveal">Experience</div>
+      <h2 class="section-title reveal">Internships &amp; Work</h2>
+ 
+      <div class="exp-timeline">
+ 
+        <!-- Internship 1 — CodeAlpha -->
+        <div class="exp-card reveal">
+          <div class="exp-left">
+            <div class="exp-logo">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <span class="exp-badge">Remote Internship</span>
+              <span class="exp-date">2025 — Present</span>
+            </div>
+            <h3 class="exp-title">Frontend Web Developer Intern</h3>
+            <p class="exp-company"><i class="fas fa-building"></i> CodeAlpha</p>
+            <p class="exp-desc">
+              Building and refining responsive web interfaces using HTML, CSS and JavaScript.
+              Collaborating on real-world frontend projects, implementing UI components, and
+              delivering polished user experiences as part of a remote development team.
+            </p>
+            <div class="exp-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Internship 2 — Developer Hub Corporation -->
+        <div class="exp-card reveal delay-1">
+          <div class="exp-left">
+            <div class="exp-logo">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="exp-line last"></div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <span class="exp-badge">Remote Internship</span>
+              <span class="exp-date">2025 — Present</span>
+            </div>
+            <h3 class="exp-title">Flutter Developer Intern</h3>
+            <p class="exp-company"><i class="fas fa-building"></i> Developer Hub Corporation</p>
+            <p class="exp-desc">
+              Designing and developing cross-platform mobile applications using Flutter &amp; Dart.
+              Working on full app lifecycles — from UI design and state management to deployment —
+              and contributing to production-ready Flutter codebases remotely.
+            </p>
+            <div class="exp-tags">
+              <span>Flutter</span><span>Dart</span><span>Mobile Dev</span><span>UI/UX</span>
+            </div>
+          </div>
+        </div>
+ 
+      </div><!-- end .exp-timeline -->
+    </div>
+  </section>
+  <!-- ═══ SKILLS ═══ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">Expertise</div>
+      <h2 class="section-title reveal">Skills &amp; Technologies</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon" style="background:rgba(245,166,35,0.12);color:#F5A623">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Flutter &amp; Mobile</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Flutter</span><span>90%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Dart</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>UI Animations</span><span>88%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>CustomPainter</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal delay-1">
+          <div class="skill-card-header">
+            <div class="skill-icon" style="background:rgba(245,166,35,0.12);color:#F5A623">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Frontend Web</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>HTML5</span><span>90%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>CSS3</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>JavaScript</span><span>75%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Tailwind CSS</span><span>80%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal delay-2">
+          <div class="skill-card-header">
+            <div class="skill-icon" style="background:rgba(245,166,35,0.12);color:#F5A623">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>AI / ML &amp; Python</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Python</span><span>82%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="82"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>NLP</span><span>72%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="72"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Scikit-learn</span><span>70%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="70"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Data Processing</span><span>74%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="74"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal delay-1">
+          <div class="skill-card-header">
+            <div class="skill-icon" style="background:rgba(245,166,35,0.12);color:#F5A623">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Tools &amp; Systems</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Git &amp; GitHub</span><span>85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>C / C++</span><span>78%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="78"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>VS Code</span><span>90%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Android Studio</span><span>78%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="tech-tags reveal">
+        <span class="tag">Flutter</span><span class="tag">Dart</span>
+        <span class="tag">HTML5</span><span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span><span class="tag">Tailwind</span>
+        <span class="tag">Python</span><span class="tag">C++</span>
+        <span class="tag">Git</span><span class="tag">GitHub</span>
+        <span class="tag">NLP</span><span class="tag">Scikit-learn</span>
+        <span class="tag">CustomPainter</span><span class="tag">Android Studio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">Portfolio</div>
+      <h2 class="section-title reveal">Featured Projects</h2>
+
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="flutter">📱 Flutter Apps</button>
+        <button class="filter-btn" data-filter="web">🌐 Web Projects</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- FLUTTER APPS -->
+        <div class="project-card reveal" data-category="flutter">
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag flutter">Flutter</span>
+              <span class="card-year">2025</span>
+            </div>
+            <h3>MediRadar</h3>
+            <p>Dark space-themed pharmacy finder app with custom logo via CustomPainter, splash animations, shimmer loading, staggered onboarding &amp; WCAG AA compliance.</p>
+            <div class="card-techs">
+              <span>Flutter</span><span>Dart</span><span>CustomPainter</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/EamanFatima-11/mediradar" target="_blank" class="card-btn code">
+                <i class="fab fa-github"></i> Code
+              </a>
+               <a href="https://eamanfatima-11.github.io/MediRadar/" target="_blank" class="card-btn code">
+                
+                <i class="fas fa-play"></i>Live Demo 
+              </a>
+             
+            </div>
+            <div class="card-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1" data-category="flutter">
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag flutter">Flutter</span>
+              <span class="card-year">2025</span>
+            </div>
+            <h3>AuraMood</h3>
+            <p>Mood tracking app with animated gradient backgrounds, 6 mood types, pulse animations, daily mood logging and a deep space aesthetic.</p>
+            <div class="card-techs">
+              <span>Flutter</span><span>Dart</span><span>Animations</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/EamanFatima-11/AuraMood" target="_blank" class="card-btn code">
+                <i class="fab fa-github"></i> Code
+              </a>
+               <a href="https://eamanfatima-11.github.io/AuraMood/" target="_blank" class="card-btn code">
+                
+                <i class="fas fa-play"></i>Live  Demo
+              </a>
+           
+            </div>
+            <div class="card-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2" data-category="flutter">
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag flutter">Flutter</span>
+              <span class="card-year">2025</span>
+            </div>
+            <h3>StarNote</h3>
+            <p>Space-themed notes app with masonry grid layout, tag filtering, live search, 6 color themes and a beautiful dark editor experience.</p>
+            <div class="card-techs">
+              <span>Flutter</span><span>Dart</span><span>GridView</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/EamanFatima-11/StarNote" target="_blank" class="card-btn code">
+                <i class="fab fa-github"></i> Code
+              </a>
+              <a href="https://eamanfatima-11.github.io/StarNote/" target="_blank" class="card-btn code">
+               
+                <i class="fas fa-play"></i> Live Demo
+              </a>
+             
+            </div>
+            <div class="card-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="flutter">
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag flutter">Flutter</span>
+              <span class="card-year">2025</span>
+            </div>
+      
+            <h3>NovaBudget</h3>
+            <p>Fully functional personal finance tracker with live balance, add/delete transactions, budget limits, weekly bar chart &amp; category donut chart.</p>
+            <div class="card-techs">
+              <span>Flutter</span><span>Dart</span><span>ChangeNotifier</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/EamanFatima-11/NovaBudget" target="_blank" class="card-btn code">
+                <i class="fab fa-github"></i> Code
+              </a>
+              <a href="https://eamanfatima-11.github.io/NovaBudget/" target="_blank" class="card-btn code">
+               <i class="fas fa-play"></i> Live Demo
+              </a>
+          
+            </div>
+            <div class="card-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2" data-category="flutter">
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag flutter">Flutter</span>
+              <span class="card-year">2025</span>
+            </div>
+            <h3>LunaHabit</h3>
+            <p>Habit tracker with streak system, weekly heat map, insights dashboard, progress ring, streak leaderboard and beautiful rose bloom theme.</p>
+            <div class="card-techs">
+              <span>Flutter</span><span>Dart</span><span>Animations</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/EamanFatima-11/LunaHabit" target="_blank" class="card-btn code">
+                <i class="fab fa-github"></i> Code
+              </a>
+              <a href="https://eamanfatima-11.github.io/LunaHabit/" target="_blank" class="card-btn demo">
+                <i class="fas fa-play"></i> Live Demo
+              </a>
+            </div>
+            <div class="card-arrow">↗</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="flutter">
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag flutter">Flutter</span>
+              <span class="card-year">2025</span>
+            </div>
+            <h3>CosmoQuiz</h3>
+            <p>CS trivia quiz with 50 questions across 5 categories, 15-sec timer, point system, animated starfield, orbit animation &amp; detailed review screen.</p>
+            <div class="card-techs">
+              <span>Flutter</span><span>Dart</span><span>CustomPainter</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/EamanFatima-11/CosmoQuiz" target="_blank" class="card-btn code">
+                <i class="fab fa-github"></i> Code
+              </a>
+              <a href="https://eamanfatima-11.github.io/CosmoQuiz/" target="_blank" class="card-btn code">
+              
+                <i class="fas fa-play"></i>Live Demo 
+              </a>
+            </div>
+            <div class="card-arrow">↗</div>
+          </div>
+        </div>
+<!-- WEB PROJECTS -->
+
+<div class="project-card reveal" data-category="web">
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="card-tag web">Web</span>
+      <span class="card-year">2024</span>
+    </div>
+    <h3>Speech-to-Text</h3>
+    <p>Voice recognition web app using the Web Speech API to convert spoken words to text in real time.</p>
+    <div class="card-techs">
+      <span>HTML</span><span>CSS</span><span>Web Speech API</span>
+    </div>
+    <div class="card-links">
+      <a href="https://github.com/EamanFatima-11/Speech-to-text-converter" target="_blank" class="card-btn code">Code</a>
+      <a href="https://speech-to-text-converter-by-eaman.netlify.app/" target="_blank" class="card-btn demo">Live Demo</a>
+    </div>
+    <div class="card-arrow">↗</div>
+  </div>
+</div>
+
+<div class="project-card reveal delay-1" data-category="web">
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="card-tag web">Web</span>
+      <span class="card-year">2024</span>
+    </div>
+    <h3>Memory Game</h3>
+    <p>Interactive card matching game with flip animations, move counter, timer, and difficulty levels.</p>
+    <div class="card-techs">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    </div>
+    <div class="card-links">
+      <a href="https://github.com/EamanFatima-11/Memory-Game" target="_blank" class="card-btn code">Code</a>
+      <a href="https://memory-game-by-eaman.netlify.app/" target="_blank" class="card-btn demo">Live Demo</a>
+    </div>
+    <div class="card-arrow">↗</div>
+  </div>
+</div>
+
+<div class="project-card reveal delay-1" data-category="web">
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="card-tag web">Web</span>
+      <span class="card-year">2024</span>
+    </div>
+    <h3>Weather App</h3>
+    <p>Real-time weather application using OpenWeather API with location-based search.</p>
+    <div class="card-techs">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+    </div>
+    <div class="card-links">
+      <a href="https://github.com/EamanFatima-11/Weather-App" target="_blank" class="card-btn code">Code</a>
+      <a href="https://weather-app-by-eaman.netlify.app/" target="_blank" class="card-btn demo">Live Demo</a>
+    </div>
+    <div class="card-arrow">↗</div>
+  </div>
+</div>
+
+<div class="project-card reveal delay-2" data-category="web">
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="card-tag web">Web</span>
+      <span class="card-year">2024</span>
+    </div>
+    <h3>Media Player</h3>
+    <p>Browser-based music player with playback controls and playlist navigation.</p>
+    <div class="card-techs">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    </div>
+    <div class="card-links">
+      <a href="https://github.com/EamanFatima-11/Music-player" target="_blank" class="card-btn code">Code</a>
+      <a href="https://eamanfatima-11.github.io/Music-player/" target="_blank" class="card-btn demo">Live Demo</a>
+    </div>
+    <div class="card-arrow">↗</div>
+  </div>
+</div>
+
+<div class="project-card reveal" data-category="web">
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="card-tag web">Web</span>
+      <span class="card-year">2024</span>
+    </div>
+    <h3>Todo List App</h3>
+    <p>Task management app with add/delete/complete features and local storage.</p>
+    <div class="card-techs">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    </div>
+    <div class="card-links">
+      <a href="https://github.com/EamanFatima-11/To-Do-list" target="_blank" class="card-btn code">Code</a>
+      <a href="https://to-do-list-by-eaman.netlify.app/" target="_blank" class="card-btn demo">Live Demo</a>
+    </div>
+    <div class="card-arrow">↗</div>
+  </div>
+</div>
+
+<div class="project-card reveal delay-2" data-category="web">
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="card-tag web">Web</span>
+      <span class="card-year">2024</span>
+    </div>
+    <h3>Calculator</h3>
+    <p>Web-based calculator for performing basic mathematical operations.</p>
+    <div class="card-techs">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    </div>
+    <div class="card-links">
+      <a href="https://github.com/EamanFatima-11/calculator" target="_blank" class="card-btn code">Code</a>
+      <a href="https://eamanfatima-11.github.io/calculator/" target="_blank" class="card-btn demo">Live Demo</a>
+    </div>
+    <div class="card-arrow">↗</div>
+  </div>
+</div>
+
+
+      </div><!-- end .projects-grid -->
+    </div><!-- end .container -->
+  </section><!-- end #projects -->
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">Get In Touch</div>
+      <h2 class="section-title reveal">Let's Work Together</h2>
+      <div class="contact-grid">
+
+        <div class="contact-left reveal">
+          <p class="contact-intro">
+            I'm open to internships, research collaborations, freelance projects and
+            fully funded M.S. opportunities abroad. Feel free to reach out!
+          </p>
+          <div class="contact-items">
+            <a href="mailto:eamanfatima112@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-val"><span class="__cf_email__" data-cfemail="0663676b67686067726f6b6737373446616b676f6a2865696b">eamanfatima112@gmail.com</span></div>
+              </div>
+            </a>
+            <a href="https://github.com/EamanFatima-11" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <div class="contact-label">GitHub</div>
+                <div class="contact-val">github.com/EamanFatima-11</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/eaman-fatima-51640434b/" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-val">Eaman Fatima</div>
+              </div>
+            </a>
+            <a href="tel:+923008639514" class="contact-item">
+  <div class="contact-icon"><i class="fas fa-phone"></i></div>
+  <div>
+    <div class="contact-label">Phone / WhatsApp</div>
+    <div class="contact-val">+92-300-8639514</div>
+  </div>
+</a>
+            <div class="contact-item no-link">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-val">Multan-Pakistan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right reveal delay-1">
+         
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formspree.io/f/xbdpdzrn"
+            method="POST"
+          >
+            <!-- Formspree: reply-to the sender automatically -->
+            <input type="hidden" name="_replyto" value="">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required/>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required/>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?"/>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="submitBtn">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! I'll get back to you soon.
+            </div>
+            <div class="form-error" id="formError">
+              ❌ Something went wrong. Please try again or email me directly.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">EF<span>.</span></a>
+          <p>Flutter App Designer &amp; Frontend Web Developer</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Navigation</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links-group">
+          <h4>Connect</h4>
+          <a href="https://github.com/EamanFatima-11" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/eaman-fatima-51640434b/" target="_blank">LinkedIn</a>
+          <a >Email: eamanfatima112@gmail.com</a>
+          <a>Contact: +92-300-8639514</a>
+<script src="script.js"></script>
+</body>
 
   
-  </style>
-</head>
-<body class="bg-animated">
-
-  <!-- Navbar -->
-  <header class="fixed w-full top-0 bg-black/50 backdrop-blur-md shadow-md z-50">
-    <nav class="flex justify-between items-center px-6 py-4">
-      <h1 class="text-purple-400 text-xl font-bold">Eaman Fatima</h1>
-      <ul class="flex space-x-6 text-gray-300">
-        <li><a href="#about" class="hover:text-purple-400 transition">About</a></li>
-        <li><a href="#skills" class="hover:text-purple-400 transition">Skills</a></li>
-        <li><a href="#projects" class="hover:text-purple-400 transition">Projects</a></li>
-        <li><a href="#contact" class="hover:text-purple-400 transition">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-    <h1 class="text-5xl md:text-7xl font-extrabold text-purple-400 drop-shadow-lg">Hi, I'm Eaman Fatima</h1>
-    <p class="mt-4 text-2xl text-gray-300 ">Frontend Developer | JavaScript Lover</p>
-    <div class="mt-6 flex space-x-4">
-      <a href="#projects" class="border border-purple-500 px-5 py-2 rounded-lg hover:bg-purple-700 text-white transition">View Projects</a>
-      <a href="#contact" class="border border-purple-500 px-5 py-2 rounded-lg hover:bg-purple-700 text-white transition">Contact Me</a>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-20 px-6 text-center max-w-3xl mx-auto">
-    <h2 class="text-3xl font-bold mb-6 text-purple-400">🙋 About Me</h2>
-    <p class="text-gray-300 text-lg leading-relaxed">
-      Hi! I'm <span class="text-purple-300 font-semibold">Eaman Fatima</span>, a passionate 
-      <span class="text-purple-400">Frontend Developer</span> who loves turning 
-      designs into interactive, user-friendly web experiences. 
-      I enjoy working with <span class="text-purple-300">JavaScript, React, and Tailwind CSS</span>, 
-      and I’m always eager to learn new technologies and improve my craft.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="py-20 text-center">
-    <h2 class="text-3xl font-bold mb-12 text-purple-400">🚀 Skills</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 px-6 max-w-6xl mx-auto">
-      <div class="glass-card p-6 rounded-xl">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-12 h-12 mx-auto mb-3">
-        <p>HTML</p>
-      </div>
-      <div class="glass-card p-6 rounded-xl">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-12 h-12 mx-auto mb-3">
-        <p>CSS</p>
-      </div>
-      <div class="glass-card p-6 rounded-xl">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12 mx-auto mb-3">
-        <p>JavaScript</p>
-      </div>
-      <div class="glass-card p-6 rounded-xl">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-12 h-12 mx-auto mb-3">
-        <p>React</p>
-      </div>
-      <div class="glass-card p-6 rounded-xl">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="w-12 h-12 mx-auto mb-3">
-        <p>Tailwind</p>
-      </div>
-      <div class="glass-card p-6 rounded-xl">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-12 h-12 mx-auto mb-3">
-        <p>GitHub</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="py-20 px-6">
-    <h2 class="text-3xl font-bold text-center mb-12 text-purple-400">💻 Projects</h2>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-      <!-- Weather App -->
-      <div class="glass-card p-6 rounded-2xl">
-        <h3 class="text-xl font-semibold mb-3 text-purple-300">🌦️ Weather App</h3>
-        <p class="text-gray-300 mb-3">Check live weather using OpenWeather API.</p>
-        <div class="flex space-x-4">
-          <a href="https://weather-app-by-eaman.netlify.app/"  target="_blank"class="text-purple-400 hover:underline">🔗 Live Demo</a>
-          <a href="https://github.com/EamanFatima-11/Weather-App/tree/main"  target="_blank"class="text-purple-400 hover:underline">📂 Code</a>
-        </div>
-      </div>
-
-      <!-- Todo List -->
-      <div class="glass-card p-6 rounded-2xl">
-        <h3 class="text-xl font-semibold mb-3 text-purple-300">🛒 Mini E-Commerce</h3>
-        <p class="text-gray-300 mb-3">Simple cart system with product filters.</p>
-         <div class="flex space-x-4">
-          <a href="https://mini-ecommerce-site-by-eaman.netlify.app/" target="_blank" class="text-purple-400 hover:underline">🔗 Live Demo</a>
-          <a href="https://github.com/EamanFatima-11/Mini-Ecommerce-platform" target="_blank" class="text-purple-400 hover:underline">📂 Code</a>
-        </div>
-        
-      </div>
-
-      <!-- Mini E-Commerce -->
-      <div class="glass-card p-6 rounded-2xl">
-        <h3 class="text-xl font-semibold mb-3 text-purple-300">✅ Todo List</h3>
-        <p class="text-gray-300 mb-3">Organize tasks with a clean UI & local storage.</p>
-       <div class="flex space-x-4">
-          <a href="https://to-do-list-by-eaman.netlify.app/"  target="_blank" class="text-purple-400 hover:underline">🔗 Live Demo</a>
-          <a href="https://github.com/EamanFatima-11/To-Do-list/tree/main"  target="_blank" class="text-purple-400 hover:underline">📂 Code</a>
-        </div>
-      </div>
-
-      <!-- Memory Game -->
-      <div class="glass-card p-6 rounded-2xl">
-        <h3 class="text-xl font-semibold mb-3 text-purple-300">🎮 Memory Game</h3>
-        <p class="text-gray-300 mb-3">Flip cards game made with JavaScript.</p>
-        <div class="flex space-x-4">
-          <a href="https://memory-game-by-eaman.netlify.app/" target="_blank" class="text-purple-400 hover:underline">🔗 Live Demo</a>
-          <a href="https://github.com/EamanFatima-11/Memory-Game" target="_blank" class="text-purple-400 hover:underline">📂 Code</a>
-        </div>
-      </div>
-
-      <!-- Blog Website -->
-      <div class="glass-card p-6 rounded-2xl">
-        <h3 class="text-xl font-semibold mb-3 text-purple-300">📚 Blog Website</h3>
-        <p class="text-gray-300 mb-3">Responsive blog layout with clean design.</p>
-        <div class="flex space-x-4">
-          <a href="https://blog-layout-by-eaman.netlify.app/"target="_blank" class="text-purple-400 hover:underline">🔗 Live Demo</a>
-          <a href="https://github.com/EamanFatima-11/Blog-layout/tree/main" target="_blank" class="text-purple-400 hover:underline">📂 Code</a>
-        </div>
-      </div>
-
-      <!-- Portfolio Dashboard -->
-      <div class="glass-card p-6 rounded-2xl">
-        <h3 class="text-xl font-semibold mb-3 text-purple-300">🎤 Speech-to-Text Converter</h3>
-        <p class="text-gray-300 mb-3"> convert speech into text using web speech API </p>
-        <div class="flex space-x-4">
-          <a href="https://speech-to-text-converter-by-eaman.netlify.app/" target="_blank" class="text-purple-400 hover:underline">🔗 Live Demo</a>
-          <a href="https://github.com/EamanFatima-11/Speech-to-text-converter/tree/main"  target="_blank" class="text-purple-400 hover:underline">📂 Code</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-20 text-center">
-    <h2 class="text-3xl font-bold mb-6 text-purple-400">📬 Contact Me</h2>
-    <p class="text-gray-300">Let's build something amazing together!</p>
-    <div class="mt-4">
-     
-
-      <p>📧 Email:  <a href="mailto:eamanfatima112@gmail.com" class="text-purple-400 hover:underline">eamanfatima112@gmail.com</a></p>
-
-
-      <p>🐙 GitHub: <a href="https://github.com/EamanFatima-11" class="text-purple-400 hover:underline">github.com/EamanFatima-11</a></p>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-6 text-center text-gray-500 text-sm bg-black/40 backdrop-blur-md">
-    © 2025 Eaman Fatima | Built with ❤️ and Tailwind CSS
-  </footer>
-</body>
-</html>
-
